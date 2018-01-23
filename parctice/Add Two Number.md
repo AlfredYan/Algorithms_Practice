@@ -17,6 +17,47 @@ Explanation: 342 + 465 = 807.
 **Solution:** 
 
 ```java
+// Definition for singly-linked list.
+public class ListNode {
+  	int val;
+  	ListNode next;
+  	ListNode(int x) { val = x; }
+}
 
+class Solution {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+      
+      	// create result and assign 0 as dummy value
+        ListNode result = new ListNode(0);
+        ListNode currNode = result;
+        
+      	// the carry for last digit
+      	int carry = 0;
+        
+        // sum the value in each node with the same digit
+        while(l1 != null || l2 != null) {
+          
+            int firstVal = (l1 != null) ? l1.val : 0;
+            int secondVal = (l2 != null) ? l2.val : 0;
+            int sum = carry + firstVal + secondVal;
+            carry = sum / 10;
+            currNode.next = new ListNode(sum % 10);
+            
+          	// go to next digit
+          	currNode = currNode.next;
+            if(l1 != null)
+                l1 = l1.next;
+            if(l2 != null)
+                l2 = l2.next;
+        }
+        
+        // when the highest digit has carry (sum >= 10)
+        if(carry > 0)
+            currNode.next = new ListNode(carry);
+        
+      	// return the real result
+        return result.next;
+    }
+}
 ```
 
