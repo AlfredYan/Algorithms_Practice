@@ -61,3 +61,6 @@ class Solution {
 }
 ```
 
+Time Complexity: **O(max(m,n))** 
+
+Space Complexity: **O(max(m,n))** 
