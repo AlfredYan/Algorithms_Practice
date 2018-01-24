@@ -14,7 +14,7 @@ Output: 7 -> 0 -> 8
 Explanation: 342 + 465 = 807.
 ```
 
-**Solution:** 
+**Solution:** [[demo code](https://github.com/AlfredYan/Algorithms_Practice/blob/master/code/AddTwoNumber.java)] 
 
 ```java
 // Definition for singly-linked list.
