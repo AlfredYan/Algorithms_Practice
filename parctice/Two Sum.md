@@ -18,7 +18,7 @@ return [0, 1].
 **Solution:** 
 
 ```java
-public int[] twoSum(int[] nums, int target) {
+	public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<Integer, Integer>();
         for(int i=0; i<nums.length; i++){
             int numToFind = target - nums[i];
@@ -33,7 +33,7 @@ public int[] twoSum(int[] nums, int target) {
   
   		// no solution, throw exception
         throw new IllegalArgumentException("No solution");
-}
+	}
 ```
 
 Time Complexity: ***O(n)*** 
@@ -53,4 +53,4 @@ Internally HashMap contains an array of Node. and each node represents as a clas
 
 A hash value represents the hash value of the key. All the keys with the same hash value are put in the same linked list.
 
-HashMap doesn't allow duplicate keys, but allows duplicate values. It is unsynchronized and does not guarantee the order of the map.
+HashMap doesn't allow duplicate keys, but allows duplicate values. It is unsynchronized and does not guarantee the order of the map.s
