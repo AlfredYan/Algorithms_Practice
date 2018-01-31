@@ -1,32 +1,6 @@
-# Median of Two Sorted Arrays
 
-**Question:** 
+public class MedianOfTwoSortedArrays {
 
-There are two sorted arrays **nums1** and **nums2** of size m and n respectively.
-
-Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
-
-**Example1:** 
-
-```
-nums1 = [1, 3]
-nums2 = [2]
-
-The median is 2.0
-```
-
-**Example2:** 
-
-```
-nums1 = [1, 2]
-nums2 = [3, 4]
-
-The median is (2 + 3)/2 = 2.5
-```
-
-**Solution:** [[demo code](https://github.com/AlfredYan/Algorithms_Practice/blob/master/code/MedianOfTwoSortedArrays.java)] 
-
-```java
 	public double findMedianSortedArrays(int[] setA, int[] setB) {
 		
 		int numSetA = setA.length;
@@ -55,12 +29,12 @@ The median is (2 + 3)/2 = 2.5
 			int splitSetB = halfLength - splitSetA;
 			
 			if(minSplitSetA < splitSetA && setA[splitSetA - 1] > setB[splitSetB]) {
-				// Biggest value in left SetA is greater than smallest value is right SetB 
+				// when biggest value in left SetA is greater than smallest value is right SetB 
 				// SplitSetA is too big
 				// ensure the minSplitSet < splitSetA FIRST!
 				maxSplitSetA--;
 			}else if (maxSplitSetA > splitSetA && setB[splitSetB - 1] > setA[splitSetA]) {
-				// Biggest value in left SetB is greater than smallest value is right SetA
+				// when biggest value in left SetB is greater than smallest value is right SetA
 				// SplitSetA is too small
 				// // ensure the maxSplitSetA > splitSetA FIRST!
 				minSplitSetA++;
@@ -98,17 +72,17 @@ The median is (2 + 3)/2 = 2.5
 		
 		return 0.0;
 	}
-```
-
-Time Complexity: **O(log(min(m, n)))** 
-
-Space Complexity: **O(1)** 
-
-**Note:** 
-
-The **median** is used for dividing a set into equal length subsets, that one subset is always greater than the other. The main idea of this problem is: cut two sets A&B at random positions, then put Left_A and Left_B to a set and Right_A and Right_B to another set. 
-
-We have Left_Part and Right_Part. What we need to ensure is:
-
-1. len(Left_Part) = len(Right_Part)
-2. max(Left_Part) < min(Right_Part)
+	
+	public static void main(String[] args) {
+		MedianOfTwoSortedArrays demo = new MedianOfTwoSortedArrays();
+		
+		int[] setA = {1, 3};
+		int[] setB = {2};
+		System.out.println(demo.findMedianSortedArrays(setA, setB));
+		
+		int[] setC = {1, 2};
+		int[] setD = {3, 4};
+		System.out.println(demo.findMedianSortedArrays(setC, setD));
+		
+	}
+}
