@@ -53,4 +53,4 @@ Internally HashMap contains an array of Node. and each node represents as a clas
 
 A hash value represents the hash value of the key. All the keys with the same hash value are put in the same linked list.
 
-HashMap doesn't allow duplicate keys, but allows duplicate values. It is unsynchronized and does not guarantee the order of the map.s
+HashMap doesn't allow duplicate keys, but allows duplicate values. It is unsynchronized and does not guarantee the order of the maps.
