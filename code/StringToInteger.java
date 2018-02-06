@@ -1,36 +1,5 @@
-# String to Integer (atoi)
 
-**Question:** 
-
-Implement *atoi* to convert a string to an integer. Convert the characters until meet the character that cannot cast to number.
-
-*Notes:* It is intended for this problem to be specified vaguely (ie, no given input specs). You are responsible to gather all the input requirements up front.
-
-**Example:** 
-
-```
-Input: ""
-Output: 0
-```
-
-```
-Input: "  -0012a42"
-Output: -12
-```
-
-```
-Input: "-2147483649"
-Output: -2147483648
-```
-
-```
-Input: "2147483648"
-Output: 2147483647
-```
-
-**Solution:** 
-
-```java
+public class StringToInteger {
 	public int stringToInteger(String str) {
 		// str is not correct
 		if(str == null || str.length() == 0) return 0;
@@ -58,5 +27,12 @@ Output: 2147483647
 		}
 		return sign*(int)sum;
 	}
-```
-
+	
+	public static void main(String[] args) {
+		StringToInteger demo = new StringToInteger();
+		System.out.println(demo.stringToInteger(""));
+		System.out.println(demo.stringToInteger("2147483648"));
+		System.out.println(demo.stringToInteger("-2147483649"));
+		System.out.println(demo.stringToInteger("  -0012a42"));
+	}
+}
