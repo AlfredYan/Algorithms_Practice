@@ -28,7 +28,7 @@ Input: "2147483648"
 Output: 2147483647
 ```
 
-**Solution:** 
+**Solution:** [[demo code](https://github.com/AlfredYan/Algorithms_Practice/blob/master/code/StringToInteger.java)]
 
 ```java
 	public int stringToInteger(String str) {

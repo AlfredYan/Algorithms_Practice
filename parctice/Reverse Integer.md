@@ -25,7 +25,7 @@ Input: 120
 Output: 21
 ```
 
-**Solution: ** [[demo code](https://github.com/AlfredYan/Algorithms_Practice/blob/master/code/ReverseInteger.java)]
+**Solution: **[[demo code](https://github.com/AlfredYan/Algorithms_Practice/blob/master/code/ReverseInteger.java)]
 
 ```java
 	public int reverse(int x) {
