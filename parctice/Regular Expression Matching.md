@@ -21,7 +21,7 @@ isMatch("ab", ".*") → true
 isMatch("aab", "c*a*b") → true
 ```
 
-**Solution: ** [[demo code](https://github.com/AlfredYan/Algorithms_Practice/blob/master/code/RegularExpressionMatching.java)]
+**Solution:** [[demo code](https://github.com/AlfredYan/Algorithms_Practice/blob/master/code/RegularExpressionMatching.java)]
 
 ```java
 	public boolean isMatch(String text, String pattern) {
@@ -48,7 +48,13 @@ isMatch("aab", "c*a*b") → true
     }
 ```
 
-**Note: ** 
+T, P are the lengths of text and pattern:
+
+Time Complexity: **O((T+P)2<sup>T+p/2</sup>)** 
+
+Space Complexity: **O((T+P)2<sup>T+p/2</sup>)** 
+
+**Note:** 
 
 If there were no Kleene stars(``*``), we simply check from left to right if each character of the text matches the pattern.
 

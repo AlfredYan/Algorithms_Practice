@@ -1,6 +1,6 @@
 # Generate Tree and Verify
 
-**Question: **
+**Question:**
 
 Given a binary tree as a squesnce of parent-child pairs. The tree represented by the node pairs in string. eg: ``"(B,D) (D,E) (A,B) (C,F) (E,G) (A,C)"`` . Generate the input string to a tree and represent in the lexicographically smallest way (the letter is in order, A to Z). If the input is wrong or there exists mistake when generate the tree, return the error message.
 
@@ -36,7 +36,7 @@ input: (wrong,input)
 output: Wrong Input
 ```
 
-**Solution: ** [[demo code](https://github.com/AlfredYan/Algorithms_Practice/blob/master/code/GenerateTreeAndVerify.cpp)]
+**Solution:** [[demo code](https://github.com/AlfredYan/Algorithms_Practice/blob/master/code/GenerateTreeAndVerify.cpp)]
 
 ```c++
 #include <iostream>

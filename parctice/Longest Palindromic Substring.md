@@ -53,7 +53,7 @@ Time Complexity: **O(n<sup>2</sup>)**
 
 Space Complexity: **O(1)** 
 
-**Note: **
+**Note:**
 
 A palindromic string can be expand from its center and there are 2n-1 such centers (for both odd and even cases).
 
