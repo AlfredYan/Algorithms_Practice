@@ -36,7 +36,7 @@ input: (wrong,input)
 output: Wrong Input
 ```
 
-**Solution: **
+**Solution: ** [[demo code](https://github.com/AlfredYan/Algorithms_Practice/blob/master/code/GenerateTreeAndVerify.cpp)]
 
 ```c++
 #include <iostream>
