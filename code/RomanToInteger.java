@@ -12,7 +12,7 @@ public class RomanToInteger {
 		romanVal.put('I', 1);
 		
 		char currChar;
-		int currPos = 0, sum = 0, currVal = 0, preVal = 4000;
+		int currPos = 0, sum = 0, currVal = 0, preVal = 0;
 		while(currPos < roman.length()) {
 			currChar = roman.charAt(currPos);
 			currVal = romanVal.get(currChar);
