@@ -19,6 +19,9 @@ A solution set is:
 **Solution:** [[demo code](https://github.com/AlfredYan/Algorithms_Practice/blob/master/code/ThreeSum.java)]
 
 ```java
+	import java.util.ArrayList;
+	import java.util.Arrays;
+	import java.util.List;	
 	public List<List<Integer>> threeSum(int[] nums){
 		Arrays.sort(nums);
 		List<List<Integer>> result = new ArrayList<>();
