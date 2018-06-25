@@ -49,6 +49,6 @@ Given *n* pairs of parentheses, write a function to generate all combinations 
 	}
 ```
 
-Time Complexity: **O($\frac{n^4}{\sqrt{n}}$)**. Each valid sequence has at most `n` steps during the backtracking procedure.
+Time Complexity: O($\frac{n^4}{\sqrt{n}}$). Each valid sequence has at most `n` steps during the backtracking procedure.
 
-Space Complexity: **O($\frac{n^4}{\sqrt{n}}$)** 
+Space Complexity: O($\frac{n^4}{\sqrt{n}}$) 
