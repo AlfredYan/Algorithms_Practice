@@ -24,7 +24,7 @@ Output: 20
 	public int maxArea(int[] height) {
 		
 		// calculate the area from the points in most right and most left
-		int left = 0, right = height.length-1, maxArea = 0, currArea = 0;
+		int left = 0, right = height.length-1, maxArea = 0;
 		
 		while(left < right) {
 			
